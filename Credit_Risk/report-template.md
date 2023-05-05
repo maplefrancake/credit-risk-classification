@@ -10,6 +10,14 @@ In this section, describe the analysis you completed for the machine learning mo
 * Describe the stages of the machine learning process you went through as part of this analysis.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 
+For this challenge, I created two models with different method to classify loans as either healthy or high risk. The financial information driving these models were on lending data, which included data such as:
+  * Loan size
+  * Interest rate
+  * Debt-to-income ratio
+  * and more...
+
+The models were attempting to predict the 'loan status' of each loan, which means whether it was healthy or a high-risk loan. As part of the analysis, I split up the given data into training and test sets, fit a logistic regression model with the training set, predicted the outcomes for the test points, and compared these predictions to the actual loan status. For the second model, I used a random oversampling method to resample the data to have an equal number of healthy and high risk loans used to train the model. I worked through the same steps and compared how well this model did to the first first one.
+
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
